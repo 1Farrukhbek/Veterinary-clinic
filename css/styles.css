@@ -1,0 +1,143 @@
+@font-face {
+  font-family: "Futura PT";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/FuturaPT-Book.woff2") format("woff2"),
+  url("../fonts/FuturaPT-Book.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Futura PT";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/FuturaPT-Bold.woff2") format("woff2"),
+  url("../fonts/FuturaPT-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Futura PT";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../fonts/FuturaPT-Medium.woff2") format("woff2"),
+  url("../fonts/FuturaPT-Medium.woff") format("woff");
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Futura PT", "Arial", sans-serif;
+  font-size: 16px;
+  /* padding-top: 116px; */
+  color: #000;
+}
+
+.visually-hidden {
+  position:absolute;
+  width:1px;
+  height:1px;
+  margin:-1px;
+  border:0;
+  padding:0;
+  clip:rect(0 0 0 0);
+  overflow:hidden;
+}
+
+.container {
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* =========== */
+/* SITE-HEADER */
+/* =========== */
+
+/* ================== */
+/* ENG-OF-SITE-HEADER */
+/* ================== */
+
+/* ############################################ */
+
+/* =========== */
+/* HERO-SECTION */
+/* =========== */
+
+/* ================== */
+/* ENG-OF-HERO-SECTION */
+/* ================== */
+
+/* ############################################ */
+
+/* =========== */
+/* PRICE-LIST-SECTION */
+/* =========== */
+
+/* ================== */
+/* ENG-OF-PRICE-LIST-SECTION */
+/* ================== */ 
+
+/* ############################################ */
+
+/* =========== */
+/* SERVICE-SECTION */
+/* =========== */
+
+/* ================== */
+/* ENG-OF-SERVICE-SECTION */
+/* ================== */ 
+
+/* ############################################ */
+
+/* =========== */
+/* SERVICE-SECTION */
+/* =========== */
+
+/* ================== */
+/* ENG-OF-SERVICE-SECTION */
+/* ================== */ 
+
+/* ############################################ */
+
+/* =========== */
+/* PACKING-SECTION */
+/* =========== */
+
+/* ================== */
+/* ENG-OF-PACKING-SECTION */
+/* ================== */ 
+
+/* ############################################ */
+
+/* =========== */
+/* BONUSES-SECTION */
+/* =========== */
+
+/* ================== */
+/* ENG-OF-BONUSES-SECTION */
+/* ================== */ 
+
+/* ############################################ */
+
+/* =========== */
+/* F.A.Q.-SECTION */
+/* =========== */
+
+/* ================== */
+/* ENG-OF-F.A.Q.-SECTION */
+/* ================== */ 

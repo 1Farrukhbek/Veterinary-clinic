@@ -717,7 +717,7 @@ img {
 /* ############################################ */
 
 /* =========== */
-/* CALL-BACK-SECTION */
+/* EMAIL-SECTION */
 /* =========== */
 .email-section {
   position: relative;
@@ -790,7 +790,7 @@ img {
 }
 
 /* ================== */
-/* ENG-OF-CALL-BACK-SECTION */
+/* ENG-OF-EMAIL-SECTION */
 /* ================== */ 
 
 /* ############################################ */
@@ -798,11 +798,74 @@ img {
 /* =========== */
 /* ARTICLE-SECTION */
 /* =========== */
+.article-section {
+  margin-bottom: 260px;
+}
+
 .articele-heading {
+  text-align: center;
   font-size: 48px;
   line-height: 20px;
   margin: 0;
   margin-bottom: 80px;
+}
+
+.article-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.article-list-item {
+  display: flex;
+  width: 305px;
+  overflow: hidden;
+  text-align: left;
+  margin-left: 12px;
+  margin-right: 12px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  
+  background-color: #fff;
+  border: 1px solid #E4E4E2;
+  border-radius: 5px;
+}
+
+.article-list-item::before {
+  display: inline-block;
+  width: 305px;
+  height: 180px;
+  top: 0;
+  left: 0;
+  background-image: url("../img/funny-cat.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  content: "";
+}
+
+.article-list-heading {
+  font-size: 22px;
+  line-height: 25px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.article-list-text {
+  line-height: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.article-list-link {
+  margin-left: 30px;
+  margin-bottom: 30px;
 }
 
 /* ================== */
@@ -812,11 +875,52 @@ img {
 /* ############################################ */
 
 /* =========== */
-/* BONUSES-SECTION */
+/* CALL-BACK-SECTION */
 /* =========== */
+.call-section {
+  position: relative;
+  background-color: #333333;
+  background-image: url("../img/feedback-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: auto 100%;
+  border-radius: 5px;
+  padding-top: 90px;
+  padding-bottom: 90px;
+  margin-bottom: 200px;
+  color: #fff;
+}
+
+.call-section::before {
+  display: inline-block;
+  position: absolute;
+  width: 427px;
+  height: 444px;
+  right: 0;
+  bottom: -66px;
+  background-image: url("../img/wow-fish.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  content: "";
+}
+
+.call-heading {
+  font-size: 48px;
+  line-height: 62px;
+  margin: 0;
+  margin-bottom: 14px;
+}
+
+.call-form {
+  display: flex;
+  flex-direction: column;
+  width: 360px;
+}
+
 
 /* ================== */
-/* ENG-OF-BONUSES-SECTION */
+/* ENG-OF-CALL-BACK-SECTION */
 /* ================== */ 
 
 /* ############################################ */

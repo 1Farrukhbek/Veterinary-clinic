@@ -414,6 +414,7 @@ img {
 }
 
 .quote-text {
+  position: relative;
   display: inline-block;
   max-width: 760px;
   font-size: 20px;
@@ -422,6 +423,44 @@ img {
   padding-top: 40px;
   padding-bottom: 40px;
   color: #949494;
+}
+
+
+.quote-text:before {
+  display: inline-block;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: -10%;
+  top: 10%;
+  background-image: url("../img/quote.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  content: "";
+}
+
+.quote-text::after {
+  display: inline-block;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  right: -10%;
+  bottom: 10%;
+  transform: rotate(180deg);
+  background-image: url("../img/quote.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  content: "";
+}
+
+.quote-name {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+  margin-top: 35px;
+  margin-bottom: 190px;
 }
 
 /* ================== */
@@ -433,6 +472,243 @@ img {
 /* =========== */
 /* SERVICE-SECTION */
 /* =========== */
+.services-section {
+  margin-bottom: 235px;
+}
+
+.services-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.services-heading {
+  font-size: 48px;
+  line-height: 20px;
+  margin: 0;
+  margin-bottom: 80px;
+}
+
+.service-list-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.direction {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.direction:hover {
+  box-shadow: 0 0 4px 4px #c3c3c3;
+  background-color: #fff;
+}
+
+.direction:active {
+  opacity: 0.5;
+}
+
+.direction:focus {
+  outline: none;
+}
+
+.direction-prev {
+  left: -40px;
+  background-image: url("../img/arrow-left.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+.direction-next {
+  right: -40px;
+  background-image: url("../img/arrow-right.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+.service-list {
+  display: flex;
+  width: 1225px;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  justify-content: flex-start;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.service-list-item {
+  min-width: 193px;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  padding: 30px 32px;
+  margin-right: 13px;
+  margin-bottom: 14px;
+  list-style-type: none;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.service-list-item:hover {
+  color: #FFBD54;
+}
+
+.service-list-item:active {
+  opacity: 0.5;
+}
+
+.service-list-item::before {
+  display: inline-block;
+  width: 76px;
+  height: 76px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  margin-bottom: 22px;
+  content: "";
+}
+
+.service-list-item-img-1::before {
+  background-image: url("../img/service-doctor.png");
+}
+
+.service-list-item-img-2::before {
+  background-image: url("../img/service-look.png");
+}
+
+.service-list-item-img-3::before {
+  background-image: url("../img/service-surgery.png");
+}
+
+.service-list-item-img-4::before {
+  background-image: url("../img/service-dermotology.png");
+}
+
+.service-list-item-img-5::before {
+  background-image: url("../img/service-lab.png");
+}
+
+.service-list-item-img-6::before {
+  background-image: url("../img/service-oftolmology.png");
+}
+
+.service-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1225px;
+  border-radius: 5px;
+  padding: 41px 100px 41px 35px;
+  background-color: #fff;
+}
+
+.service-info::before {
+  display: block;
+  width: 524px;
+  height: 329px;
+  background-image: url("../img/service-cat.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  content: "";
+}
+
+.right-side {
+  width: 500px;
+  text-align: left;
+  
+}
+
+.service-info-heading {
+  font-size: 36px;
+  line-height: 20px;
+  margin: 0;
+  margin-bottom: 18px;
+}
+
+.service-info-text {
+  line-height: 20px;
+  margin: 0;
+  margin-bottom: 9px;
+}
+
+.service-info-text2 {
+  line-height: 20px;
+  margin: 0;
+}
+
+.info-button-orange {
+  position: relative;
+  background: #FFBD54;
+  margin-right: 21px;
+  padding: 15px 36px 16px 63px;
+}
+
+.info-button-orange:hover {
+  background: #333333;
+  color: #fff;
+}
+
+.info-button-orange:active {
+  opacity: 0.5;
+}
+
+.info-button-orange::before {
+  display: inline-block;
+  position: absolute;
+  width: 21px;
+  height: 21px;
+  left: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-image: url("../img/money-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  content: "";
+}
+
+.info-button-black {
+  position: relative;
+  background: #333333;
+  padding: 15px 36px 16px 63px;
+}
+
+.info-button-black:hover {
+  background: #FFBD54;
+  color: #fff;
+}
+
+.info-button-black:active {
+  opacity: 0.5;
+}
+
+.info-button-black::before {
+  display: inline-block;
+  position: absolute;
+  width: 21px;
+  height: 21px;
+  left: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-image: url("../img/form-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  content: "";
+}
+
 
 /* ================== */
 /* ENG-OF-SERVICE-SECTION */
@@ -441,21 +717,96 @@ img {
 /* ############################################ */
 
 /* =========== */
-/* SERVICE-SECTION */
+/* CALL-BACK-SECTION */
 /* =========== */
+.email-section {
+  position: relative;
+  background: #78C0DE;
+  background-image: url("../img/dog-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: auto 100%;
+  border-radius: 5px;
+  padding-top: 90px;
+  padding-bottom: 90px;
+  margin-bottom: 200px;
+}
+.email-section::before {
+  display: inline-block;
+  position: absolute;
+  width: 613px;
+  height: 481px;
+  right: 0;
+  bottom: -66px;
+  background-image: url("../img/pet-dog.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  content: "";
+}
+
+.email-container {
+  padding-left: 150px;
+}
+
+.email-heading {
+  font-size: 48px;
+  line-height: 20px;
+  margin: 0;
+  padding-bottom: 42px;
+}
+
+.email-input {
+  min-width: 335px;
+  padding: 15px 20px;
+  border-radius: 5px;
+  border: none;
+  margin-right: 21px;
+}
+
+.email-input:invalid {
+  border: 3px solid #D81D04;
+}
+
+.email-input:valid {
+  border: 3px solid #00B031;
+}
+
+.email-input:focus {
+  outline: none;
+}
+
+.email-button {
+  border: none;
+  background-color: #333333;
+}
+
+.email-button:hover {
+  background-color: #FFBD54;
+}
+
+.email-button:active {
+  opacity: 0.5;
+}
 
 /* ================== */
-/* ENG-OF-SERVICE-SECTION */
+/* ENG-OF-CALL-BACK-SECTION */
 /* ================== */ 
 
 /* ############################################ */
 
 /* =========== */
-/* PACKING-SECTION */
+/* ARTICLE-SECTION */
 /* =========== */
+.articele-heading {
+  font-size: 48px;
+  line-height: 20px;
+  margin: 0;
+  margin-bottom: 80px;
+}
 
 /* ================== */
-/* ENG-OF-PACKING-SECTION */
+/* ENG-OF-ARTICLE-SECTION */
 /* ================== */ 
 
 /* ############################################ */

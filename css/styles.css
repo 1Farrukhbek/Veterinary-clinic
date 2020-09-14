@@ -727,7 +727,6 @@ img {
 /* EMAIL-SECTION */
 /* =========== */
 .email-section {
-  position: relative;
   background: #78C0DE;
   background-image: url("../img/dog-bg.jpg");
   background-repeat: no-repeat;
@@ -738,22 +737,23 @@ img {
   padding-bottom: 90px;
   margin-bottom: 200px;
 }
-.email-section::before {
+
+.email-container {
+  position: relative;
+  padding-left: 150px;
+}
+.email-container::before {
   display: inline-block;
   position: absolute;
   width: 613px;
   height: 481px;
   right: 0;
-  bottom: -66px;
+  bottom: -155px;
   background-image: url("../img/pet-dog.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
   content: "";
-}
-
-.email-container {
-  padding-left: 150px;
 }
 
 .email-heading {
@@ -970,8 +970,8 @@ img {
   background-position: center top;
   background-size: auto 100%;
   border-radius: 5px;
-  padding-top: 90px;
-  padding-bottom: 80px;
+  /* padding-top: 90px; */
+  /* padding-bottom: 80px; */
   margin-bottom: 200px;
   color: #fff;
 }
@@ -984,23 +984,22 @@ img {
 
 .call-back-wrapper {
   display: inline-block;
+  padding-top: 50px;
   margin-right: 450px;
   margin-left: auto;
 }
 
-.call-container::before {
-  display: inline-block;
-  position: absolute;
-  width: 460px;
-  height: 652px;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  background-image: url("../img/location-map.jpg");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: contain;
-  content: "";
+.location-call-back {
+  width: 100%;
+  height: 100%;
+}
+
+.location-call-back:hover{
+ opacity: 0.8;
+}
+
+.location-call-back:active{
+ opacity: 0.4;
 }
 
 .call-container::after {
@@ -1009,7 +1008,7 @@ img {
   width: 427px;
   height: 444px;
   right: 0;
-  bottom: -85px;
+  bottom: -40px;
   background-image: url("../img/wow-fish.png");
   background-repeat: no-repeat;
   background-position: center center;
